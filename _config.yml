@@ -1,13 +1,13 @@
 # Site
 title:              "Likilee's blog"
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+bio:                '개발자 이기훈 kilee의 블로그입니당'
+description:        "귀찮아서 이런거 잘 못하지만.. 저의 기억보다는 기록을 믿어야 할 거 같아요."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
+locale:             ko
 url:                "https://likilee.github.io"
 
 # Jekyll
