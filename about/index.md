@@ -1,37 +1,25 @@
 ---
 layout: page
-title: About the Theme
+title: "안녕하세요 개발자 이기훈(kilee)입니다."
 tags: [about, Jekyll, theme, moon]
 date: 2016-03-21
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+<center><a href="http://taylantatli.github.io/Moon"><b>Likilee</b></a> 훌륭한 인공지능 엔지니어가 되어 세상을 바꿀 예정입니다. 2년만 기다려주세요</center>
 
-## Preview
+## 경험 스택
+* 병돌리는 바텐더 1년
+* 2019  강원락페스티벌 조직 위원회
+* 40평 옷가게 점장
+* 플리마켓에서 미니레고 팔기
+* 텔레마케팅, 카페알바, 노가다 등 알바천국
+* 향초 브랜드 dozboon 창업 - 매각
+* 인쇄 주문 중개 플랫폼 '뽑아조' 창업 - 눈물
+* 42seoul 본과정을 통해 성장 중
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+## 인공지능 유니콘 스타트업을 만든다
+- 1단계 : 42서울 본과정을 FM으로 씹어먹어서 최대한 빠르게 끝낸다. `~21년 4월`
+- 2단계 : 인공지능 논문을 읽고, 기회가 된다면 인공지능 기업에서 인턴십을 해본다. `~22년 4월`
+- 3단계 : 꿈을 공유할 수 있는 사람들로 창업멤버를 구성하여 시작한다. `22년 5월!`
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
-
-## Getting Started
-
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
