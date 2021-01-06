@@ -6,7 +6,7 @@ date: 2021-01-07
 excerpt: "저의 블로그 테마를 소개합니다."
 tags: [sample post, readability, test]
 comments: true
-published: false
+published: true
 ---
 
 ## 블로그의 시작
