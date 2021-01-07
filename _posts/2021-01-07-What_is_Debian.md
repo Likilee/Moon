@@ -4,7 +4,7 @@ title: "Debian이 뭐지?"
 date: 2021-01-07
 excerpt: "Debian-buster 공부하려다 삼천포로 빠졌다"
 feature: https://www.jamesmutch.tech/content/images/size/w600/wordpress/2019/07/Linux-Based-OS-Debian-Buster.png
-tags: [linux, os, 42seoul]
+tags: [GNU, linux, os, 42seoul]
 comments: true
 published: true
 ---
