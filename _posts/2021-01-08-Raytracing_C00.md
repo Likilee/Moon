@@ -43,6 +43,6 @@ hyeonkim의 말에 혹한 나와 mijeong까지 3인의 miniRT 팀이 꾸려졌�
 
 ![scene2](../assets/img/2021-01-08-Raytracing_C00/scene2.png)
 
-![spheres](../assets/img/2021-01-08-Raytracing_C00/spheres.bmp)
+![spheres](../assets/img/2021-01-08-Raytracing_C00/spheres.png)
 
 ![combination](../assets/img/2021-01-08-Raytracing_C00/combination.png)
