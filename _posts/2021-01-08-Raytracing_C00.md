@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Raytracing in C 00?"
+title: "Raytracing in C_ready"
 date: 2021-01-07
 excerpt: "miniRT 후기와 실습교재 계획"
-feature: ../assets/img/2021-01-08-Raytracing_C00/combination.png
-tags: [42seoul, c, graphic]
+feature: "../assets/img/2021-01-08-Raytracing_C00/combination.png"
+tags: [42seoul, c, graphic, raytracing]
 comments: true
-published: false
+published: true
 ---
 
 ##  선택 과제인듯 아닌듯한 2서클
@@ -25,19 +25,21 @@ hyeonkim의 말에 혹한 나와 mijeong까지 3인의 miniRT 팀이 꾸려졌�
 
 함께 고군분투하여 결국 모두 최고점을 획득하며 과제를 성공적으로 마치게 되었다. 고통 받았다고 했지만, 함께 영문 레퍼런스를 읽고 번역하고, 점진적으로 프로그램을 개발, 개선해 나아가며 많은 것을 배운 값지고 즐거운 시간이었다. 개인적으로 이번 과제에서 'Code는 정말 강력하고 아름다운 창조의 도구'라는 생각을 얻게되었다. 그리고 내가 아직은 미숙하지만 이 도구를 사용할 수 있게 되었다는 사실이 너무 감사하게 느껴졌다. (앞으로 이 도구를 정말 잘 다루는 장인이 되고 싶어졌다..) 벅찬 마음은 넣어두고, 이제 남은 일은 과제를 수행하며 극복한 여러 난관들을 현재 또는 미래의 42동료들을 위해 기록으로 남기는 것이다.
 
-과제를 수행하며 알게된 Ray tracing이라는 기술은 이를 이해하고 사용하기 위해서 많은 기반 지식(수학, 물리)을 요구하며, 최적화의 영역(실시간 레이트레이싱등을 위한)으로 나아간다면, 훨씬 더 넓은 범위의 복합적인 기술 지식을 요구한다는 점이다. 하지만 다행히 과제에서 요구하는 레이트레이서는 가장 기초적인 수준을 요구하기 때문에(그럼에도 우리에게 충분히 고통을 줄) 과제 공식 문서 초입에 말한 것처럼, 지식의 벽 앞에서 평정심을 유지하고, 깊은 호흡으로 멘탈을 꽉 잡는다면 충분히 멋진 이미지를 얻을 수 있을 것이다.
+과제를 수행하며 알게된 Ray tracing이라는 기술은 이를 이해하고 사용하기 위해서 많은 기반 지식(수학, 물리)을 요구하며, 최적화의 영역(실시간 레이트레이싱등을 위한)으로 나아간다면, 훨씬 더 넓은 범위의 복합적인 기술 지식을 요구한다. 하지만 다행히 과제에서 요구하는 레이트레이서는 가장 기초적인 수준을 요구하기 때문에(그럼에도 우리에게 충분히 고통을 줄) 과제 공식 문서 초입에 말한 것처럼, 지식의 벽 앞에서 평정심을 유지하고, 깊은 호흡으로 멘탈을 꽉 잡는다면 충분히 멋진 이미지를 얻을 수 있을 것이다.
 
-> The main goal of miniRT is to prove to yourself that you are able to implement any mathematics or physics formulas without being a mathematician, we will only implement the most basics ray tracing features here so just keep calm, take a deep breath and don’t panic!
+> The main goal of miniRT is to prove to yourself that you are able to implement any mathematics or physics formulas without being a mathematician, we will only implement the most basics ray tracing features here **so just keep calm, take a deep breath and don’t panic!**
 
-우리는 miniRT를 선택한 동료들이 평정심을 잃지 않고 나아가는데 기여할 수 있는 교재를 만들고자 한다. 기초적인 수준의 지식이라 하더라도 Raytracer를 개발하는데에 필요한 지식은 대부분의 교육생들에게는 충분히 부담스러울 만하다. 여러 수학, 물리적인 개념을 완벽히는 아니더라도 사용할 수 있을 정도는 이해해야만 한다. 해서 실습 교재는 필요한 각각의 지식을 깊이 다루기보다는, 도구로 사용할 수 있을 정도의 이해를 돕기 위한 수준의 설명과 예제코드 중심으로 구성하려 한다. 정확한 이해가 필요한 개념에 대한 설명은 우리가 도움을 받은 레퍼런스들과 필요에 따라 이 레퍼런스들의 번역문을 통해 제공하고자 한다.
+우리는 miniRT를 선택한 동료들이 평정심을 잃지 않고 나아가는데 기여할 수 있는 교재를 만들고자 한다. 기초적인 수준의 지식이라 하더라도 Raytracer를 개발하는데에 필요한 지식은 대부분의 교육생들에게는 충분히 부담스러울 것이라 생각한다(최소한 우리의 상상을 훨씬 뛰어넘는 벽이였다). 레이트레이서를 개발하기 위해서는 여러 수학, 물리적인 개념을 완벽히는 아니더라도 코드에 적용할 수 있을 정도는 이해해야만 한다.
 
-어느정도 시간이 걸릴지 모르겠지만, 최대한 빠르게 초안을 만들어 공유하여 더 빠르게 miniRT과제를 수행하고 있는 동료들에게 도움을 주고싶다. 교재의 부족한 부분들의 개선은 동료들의 피드백으로 가능하지 않을까?
+앞으로 만들 실습 교재는 필요한 각각의 지식을 너무 깊이 다루기보다는, 도구로 사용할 수 있을 정도의 이해를 돕기 위한 수준의 설명과 예제코드 중심으로 구성하려 한다. 정확한 이해가 필요한 개념에 대한 설명은 우리가 도움을 받은 레퍼런스들과 필요에 따라 이 레퍼런스들의 번역문을 통해 제공하고자 한다.
+
+어느정도 시간이 걸릴지 모르겠지만, 최대한 빠르게 초안을 만들어 공유하여 더 빠르게 miniRT과제 수행에 어려움을 겪고 있는 동료들에게 도움을 주고싶다. 교재의 부족한 부분들의 개선은 동료들의 피드백으로 가능하지 않을까?
 
 ## 마치며
 
 앞으로 같은 제목으로 시작하는 시리즈 형태의 포스팅으로 교재를 연재하고 완성된 교재는 깃허브에 업로드 하려한다.
 
-내가 완성한 레이 트레이서를 통해 만든 이미지들을 마지막으로 마친다.
+내가 완성한 레이 트레이서를 통해 생성한 이미지들을 마지막으로 마친다.
 
 ![scene2](../assets/img/2021-01-08-Raytracing_C00/scene2.png)
 
